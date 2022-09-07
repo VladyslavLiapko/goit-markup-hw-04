@@ -147,7 +147,7 @@ ul {
 
 .contacts-list-item {
     font-family: var(--roboto-font-constant);
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -163,12 +163,16 @@ ul {
 .contacts-list-item-link {
     display: flex;
     align-items: center;
+    color: inherit;
    
    
 }
 
+
+
 .contacts-icon-smartphone,
 .contacts-icon-envelope {
+
     margin-right: 10px;
 }
 
@@ -244,15 +248,17 @@ button {
     border-radius: 4px;
     color: var(--main-bg-color);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-     0px 1px 2px rgba(0, 0, 0, 0.08),
-     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-btn:hover,
 .list-btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
     background: var(--accent-color);
     color: var(--main-bg-color)
+
+   
 }
 
 .list-btn {
@@ -341,6 +347,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
     
     width: 270px;
     height: 120px;
@@ -382,7 +389,7 @@ button {
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color: var(--menu-link-color);
 }
 
 
@@ -401,7 +408,7 @@ button {
 /* team-section */
 
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--main-background-color);
 }
 
 .our-crew-label {
@@ -413,7 +420,7 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color:var(--menu-link-color);
     margin-bottom: 50px;
 
 }
@@ -435,7 +442,7 @@ button {
 .team-section-list-item {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     text-align: center;
-    background-color: #FFFFFF;
+    background-color:var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -453,7 +460,7 @@ button {
         letter-spacing: 0.03em;
         margin-bottom: 10px;
     
-        color: #212121;
+        color:var(--menu-link-color);
     
    
 }
@@ -481,6 +488,8 @@ button {
     display: flex;
    justify-content: center;
    column-gap: 10px;
+   color: #AFB1B8;
+
     
 }
 
@@ -492,6 +501,7 @@ button {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    fill: #AFB1B8;
     background-color: #FFFFFF;
 }
 
@@ -504,8 +514,8 @@ button {
 .social-list-icon {
     width: 20px;
     height: 20px;
-    fill: currentColor;
-    /* fill: #AFB1B8; */
+   
+  
     
   
 }
@@ -539,11 +549,15 @@ button {
     border-top: none;
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
+.portfolio-list-link{
+    display: block;
+}
+
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
@@ -589,7 +603,7 @@ button {
     justify-content: center;
     column-gap: 30px;
     margin-top: 50px;
-    margin-bottom: 94px;
+
     
 
 }
@@ -598,17 +612,18 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+ 
 }
  
 .clients-link { 
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 4px;
         border: 1px solid #AFB1B8;
+        color:#AFB1B8 ;
+        width: 170px;
+        height: 92px;
        
 }
 
@@ -617,19 +632,21 @@ button {
     fill: #AFB1B8;
 }
 
+
 .clients-icon:hover,
 .client-icon:focus {
 
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
-.clients-item:hover, 
-.clients-item:focus {
-    border: 1px solid #2196F3;
-    fill:  #2196F3;
+.clients-link:hover, 
+.clients-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color) ;
+   
+
 
 }
-
 
 
 
@@ -687,16 +704,12 @@ footer {
 
 
 .footer-social-title {
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color:var(--main-bg-color);
 }
 
 .footer-social-list {
