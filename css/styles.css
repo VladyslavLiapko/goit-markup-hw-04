@@ -205,7 +205,7 @@ ul {
     color: var(--menu-link-color);
 }
 
-#logo {
+.logo-web {
     color: var(--accent-color);
     
 }
