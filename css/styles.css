@@ -160,10 +160,11 @@ ul {
     fill: currentColor;
 }
 
-.contacts-list-item-link {
-    display: flex;
+.contacts-list-item-link{
+     display: flex;
     align-items: center;
     color: inherit;
+  
    
    
 }
@@ -172,8 +173,8 @@ ul {
 
 .contacts-icon-smartphone,
 .contacts-icon-envelope {
-
-    margin-right: 10px;
+   
+     margin-right: 10px;
 }
 
 
@@ -284,7 +285,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid black;
-    background-image: linear-gradient(to right,
+    background-image:linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url("../images/baner.jpg");
@@ -629,23 +630,16 @@ button {
 
 .clients-icon {
 
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 
-.clients-icon:hover,
-.client-icon:focus {
-
-    fill: var(--accent-color);
-}
 
 .clients-link:hover, 
 .clients-link:focus {
     color: var(--accent-color);
-    border: 1px solid var(--accent-color) ;
+    border-color: 1px solid var(--accent-color);
    
-
-
 }
 
 
